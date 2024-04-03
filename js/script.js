@@ -100,18 +100,22 @@ const time1 = Math.round(tripDistance / milesperhour1);
 const time2 = Math.round(tripDistance / milesperhour2);
 const time3 = Math.round(tripDistance / milesperhour3);
 
+const gallons1 = Math.round(tripDistance / milespergal1);
+const gallons2 = Math.round(tripDistance / milespergal2);
+const gallons3 = Math.round(tripDistance / milespergal3);
+
+const cost55 = Math.round(gallons1 * avgFuelCost);
+const cost60 = Math.round(gallons2 * avgFuelCost);
+const cost75 = Math.round(gallons3 * avgFuelCost);
+
+console.log(cost55);
+
 console.log(
-    `Traveling 1500 miles to my destination at 55mph I will need ${time1} gallons of fuel costing about $${
-        time1 * avgFuelCost
-    }, if traveling 60mph I would need ${time2} gallons costing about $${
-        time2 * avgFuelCost
-    } and lastly, traveling at 75mph I would need ${time3} gallons costing about $${
-        time3 * avgFuelCost
-    }.`
+    `Traveling 1500 miles to my destination at 55mph I will need ${gallons1} gallons of fuel costing about $${cost55}, if traveling 60mph I would need ${gallons2} gallons costing about $${cost60} and lastly, traveling at 75mph I would need ${gallons3} gallons costing about $${cost75}.`
 );
 
 console.log(
-    `It will take ${time1} hours at 55mph, ${time2} hours at 60mph, or ${time3} hours at 75mph to reach our destination. 
+    `It will take ${time1} hours at ${milesperhour1}mph, ${time2} hours at ${milesperhour2}mph, or ${time3} hours at ${milesperhour3}mph to reach our destination. 
 
-Considering cost and time, it would be wise to travel at 75mph to our destination.`
+Considering cost and time, it would be wise to travel at ${milesperhour2}mph to our destination. It will be the quickest option as well as within budget.`
 );
