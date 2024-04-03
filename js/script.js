@@ -84,14 +84,14 @@ console.log(arithChain);
 const tripDistance = 1500;
 
 // Speed of travel
-const milesperhour1 = 55;
-const milesperhour2 = 60;
-const milesperhour3 = 75;
+let milesperhour1 = 55;
+let milesperhour2 = 60;
+let milesperhour3 = 75;
 
 // Gallons needed
-const milespergal1 = 30;
-const milespergal2 = 28;
-const milespergal3 = 23;
+let milespergal1 = 30;
+let milespergal2 = 28;
+let milespergal3 = 23;
 
 const budget = 175;
 const avgFuelCost = 3;
