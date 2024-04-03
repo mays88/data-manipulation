@@ -113,5 +113,5 @@ console.log(
 console.log(
     `It will take ${time1} hours at 55mph, ${time2} hours at 60mph, or ${time3} hours at 75mph to reach our destination. 
 
-Considering cost and time, it would be wise to travel at $75mph to our destination.`
+Considering cost and time, it would be wise to travel at 75mph to our destination.`
 );
