@@ -51,6 +51,9 @@ const dontDoThis =
     n2 != n4 &&
     n3 != n4;
 
+// START OF ASSIGNMENT
+
+// Checking to see if a number is Divisible by 5
 const n1DivisibleBy5 = !(n1 % 5 > 0);
 const n2DivisibleBy5 = !(n2 % 5 > 0);
 const n3DivisibleBy5 = !(n3 % 5 > 0);
@@ -61,6 +64,7 @@ console.log(`It is ${n2DivisibleBy5}, ${n2} is divisible by 5`);
 console.log(`It is ${n3DivisibleBy5}, ${n3} is divisible by 5`);
 console.log(`It is ${n4DivisibleBy5}, ${n4} is divisible by 5`);
 
+// Checking if a number is larger than another
 const isLarger = n1 > n4;
 
 console.log(
@@ -69,6 +73,7 @@ console.log(
     } the value of n4, which is ${n4}.`
 );
 
+// Arithmetic chain check for 0 remainder
 const arithChain = ((n1 - n2) * n3) % n4;
 
 console.log(arithChain);
@@ -106,5 +111,7 @@ console.log(
 );
 
 console.log(
-    `It will take ${time1} hours at 55mph, ${time2} hours at 60mph, or ${time3} hours at 75mph to reach our destination. Considering cost and time, it would be wise to travel at $75mph to our destination.`
+    `It will take ${time1} hours at 55mph, ${time2} hours at 60mph, or ${time3} hours at 75mph to reach our destination. 
+
+Considering cost and time, it would be wise to travel at $75mph to our destination.`
 );
