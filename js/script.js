@@ -94,7 +94,7 @@ let milespergal2 = 28;
 let milespergal3 = 23;
 
 const budget = 175;
-const avgFuelCost = 3;
+let avgFuelCost = 3;
 
 const time1 = Math.round(tripDistance / milesperhour1);
 const time2 = Math.round(tripDistance / milesperhour2);
